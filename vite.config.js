@@ -11,4 +11,5 @@ export default defineConfig({
     // subdominio de ngrok cambia en cada sesión, así no hay que editarlo cada vez.
     allowedHosts: ['.ngrok-free.dev', '.ngrok-free.app', '.ngrok.io', '.ngrok.app'],
   },
+  base: 'cloud-assessment-celeren/',
 })
