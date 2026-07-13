@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /*
+   * Paleta oficial Celeren (Manual de marca, 1.4 Especificaciones de color):
+   * Pantone 7463C / #1C3A56 (navy) y Pantone 307C / #006BA6 (azul).
+   * Son los ÚNICOS dos colores de marca — el resto de la escala son tintes/
+   * sombras derivados matemáticamente de esos dos anclajes (600 y 950).
+   */
+  --color-celeren-950: #1c3a56;
+  --color-celeren-900: #193f5e;
+  --color-celeren-800: #124b72;
+  --color-celeren-700: #0a5a8a;
+  --color-celeren-600: #006ba6;
+  --color-celeren-500: #2681b3;
+  --color-celeren-400: #599fc5;
+  --color-celeren-300: #99c4db;
+  --color-celeren-200: #c7deeb;
+  --color-celeren-100: #e6f0f6;
+  --color-celeren-50: #f5f9fb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-celeren-50);
+  color: var(--color-celeren-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
